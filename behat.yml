@@ -1,0 +1,14 @@
+# behat.yml
+default:
+  suites:
+    default:
+      paths:
+        features: features
+        bootstrap: 'features/bootstrap'
+      contexts:
+        - Behat\MinkExtension\Context\MinkContext
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      default_session: goutte
+      base_url: http://automationpractice.com
